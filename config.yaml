@@ -17,7 +17,7 @@ run_blastx: False
 # Upload results to zenodo
 # For upload, setup ZENODO_PAT environment variable for access_token
 zenodo:
-    deposition_id: 1488086
+    deposition_id: 2682610
 
 # Remote FTP credentials
 username: "anonymous"
