@@ -1,0 +1,90 @@
+{
+    "__default__" :
+    {
+        "name" : "{rule}",
+        "time" : 15,
+        "partition" : "main",
+        "cpus-per-task" : 1,
+        "mem" : 2000,
+        "output" : "logs/slurm/slurm_%j.log"
+    },
+    "fastp" :
+    {
+        "cpus-per-task" : "{threads}",
+        "time" : 30,
+        "mem" : 4000
+    },
+    "repeatmasker" :
+    {
+        "time": 1440,
+        "mem" : 8000,
+        "partition" : "main"
+    },
+    "megablast_refgenome" :
+    {
+        "time": 120,
+        "cpus-per-task" : "{threads}"
+    },
+    "megablast_nt" :
+    {
+        "mem" : 40000,
+        "time": 240,
+        "cpus-per-task" : "{threads}"
+    },
+    "bwa_mem_refgenome" :
+    {
+        "mem" : 32000,
+        "time": 120 
+    },
+    "bwa_mem_refbac" :
+    {
+        "mem" : 32000,
+        "time": 120
+    },
+    "fastq_join" :
+    {
+        "time": 35
+    },
+    "cd_hit" :
+    {
+        "mem" : 4000,
+        "time": 1440,
+        "cpus-per-task" : "{threads}"
+   },
+    "blastn_virus" :
+    {
+        "time": 480,
+        "cpus-per-task" : "{threads}"
+    },
+    "blastx_virus" :
+    {
+        "mem" : 4000,
+        "time": 960,
+        "cpus-per-task" : "{threads}"
+    },
+    "taxonomy_names" : {
+        "mem" : 8000,
+        "time": 30
+    },
+    "filter_viruses" : {
+        "mem" : 4000,
+        "time": 120
+    },
+    "blastn_nt" :
+    {
+        "mem" : 40000,
+        "time": 120,
+        "cpus-per-task" : "{threads}"
+    },
+    "blastx_nr" :
+    {
+        "mem" : 40000,
+        "time": 240,
+        "cpus-per-task" : "{threads}"
+    },
+    "filter_blasted_viruses" :
+    {
+        "mem" : 4000,
+        "time": 30
+    }
+}
